@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/bot.js": { "maxDuration": 10 },
+    "api/reward.js": { "maxDuration": 10 },
+    "api/withdraw.js": { "maxDuration": 10 }
+  },
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/public/$1" }
+  ]
+}
