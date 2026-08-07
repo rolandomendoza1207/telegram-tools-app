@@ -1,0 +1,33 @@
+html, body {
+  overscroll-behavior-y: contain;
+}
+
+.tab-btn.active {
+  color: #818cf8;
+}
+
+canvas {
+  touch-action: none;
+  max-height: 60vh;
+  object-fit: contain;
+  background:
+    linear-gradient(45deg, #1e293b 25%, transparent 25%),
+    linear-gradient(-45deg, #1e293b 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1e293b 75%),
+    linear-gradient(-45deg, transparent 75%, #1e293b 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+#toast {
+  animation: toast-in 0.2s ease-out;
+}
+
+@keyframes toast-in {
+  from { transform: translateY(-8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+input[type="range"] {
+  accent-color: #6366f1;
+}
